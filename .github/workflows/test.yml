@@ -2,8 +2,8 @@
 
 name: tes
 
-#MYTEST
-on: [commit]
+#MYTESTss
+on: [push]
   
 jobs:
   justechotest:
