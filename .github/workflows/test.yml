@@ -3,7 +3,7 @@
 name: tes
 
 #MYTEST
-on: [push]
+on: [commit]
   
 jobs:
   justechotest:
