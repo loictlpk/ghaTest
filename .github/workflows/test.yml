@@ -2,7 +2,7 @@
 
 name: tes
 
-# Controls when the workflow will run
+#MYTEST
 on: [push]
   
 jobs:
