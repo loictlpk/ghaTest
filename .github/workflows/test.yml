@@ -1,10 +1,11 @@
 name: test
 on: [push]
+  
 jobs:
-  ghcl:
+  justechotest:
     runs-on: self-hosted
     steps:
-      - name: Run a multi-line script test
+      - name: Run a multi-line script
         run: |
-          cd $HOME
-          git clone https://github.com/loictlpk/ghaTest.git
+          echo Add other actions to build,
+          echo test, and deploy your project.
