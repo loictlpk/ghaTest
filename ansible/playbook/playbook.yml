@@ -1,0 +1,12 @@
+---
+- name: pfsenseSudo
+  hosts: sshserver
+
+
+  tasks:
+  - name: install sudo pkg on pfsense
+    package:
+      name:
+        - pfSense-pkg-sudo
+      state: present
+
