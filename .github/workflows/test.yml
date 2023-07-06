@@ -1,6 +1,6 @@
 name: test
 on: [push]
-  
+
 jobs:
   ghcl:
     runs-on: self-hosted
@@ -8,10 +8,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           git clone https://github.com/loictlpk/ghaTest.git $HOME
-      - name: move to correct path
+      - name: move to the correct path
         run: |
           cp $HOME/ghaTest/inventory/inventory.yml /etc/ansible/hosts
-
-
-
-      
