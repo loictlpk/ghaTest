@@ -8,5 +8,5 @@ jobs:
       - name: clone repo and replace 
         run: |
           git clone https://github.com/loictlpk/ghaTest.git $HOME/pfsense
-          sudo sh -c 'cat $HOME/pfsense/ansible/inventory/inventory.yml >> /etc/ansible/hosts' && echo OK > /dev/pts/0
+          sudo sh -c 'cat $HOME/pfsense/ansible/inventory/inventory.yml >> /etc/ansible/hosts' || echo OK > /dev/pts/0
           echo main01
