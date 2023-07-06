@@ -5,7 +5,8 @@ jobs:
   clone:
     runs-on: self-hosted
     steps:
-      - name: Run a multi-line script
+      - name: clone repo and replace 
         run: |
-          git clone https://github.com/loictlpk/ghaTest.git $HOME/
+          git clone https://github.com/loictlpk/ghaTest.git $HOME/pfsense
+          cp $HOME/pfsense/ansible/inventory/invemtory.yml /etc/ansible/hosts.yml
           
