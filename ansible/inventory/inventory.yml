@@ -1,8 +1,10 @@
-sshserver:
+ssh-server:
   hosts:
-    pfsense:
+    pfswitch:
       ansible_host: 172.20.31.230
       ansible_user: admin 
       ansible_password: main01
       ansible_port: 22
       ansible_connection: ssh
+# [pfswitch]
+# 172.20.31.230  ansible_user=admin      ansible_password=main01
