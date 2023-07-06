@@ -1,9 +1,5 @@
 name: test
-on:
-  push:
-    branches:
-      - main
-
+on: [push]
 jobs:
   ghcl:
     runs-on: self-hosted
@@ -12,4 +8,3 @@ jobs:
         run: |
           cd $HOME
           git clone https://github.com/loictlpk/ghaTest.git
-          cp ghaTest/inventory/inventory.yml /etc/ansible/hosts
