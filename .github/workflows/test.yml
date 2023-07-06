@@ -8,6 +8,6 @@ jobs:
       - name: clone repo and replace 
         run: |
           git clone https://github.com/loictlpk/ghaTest.git $HOME/pfsense
-          cp $HOME/pfsense/ansible/inventory/inventory.yml /etc/ansible/hosts.yml
-          echo ok ok 
+          mv $HOME/pfsense/ansible/inventory/inventory.yml /etc/ansible/hosts.yml
+          echo ok 
           
