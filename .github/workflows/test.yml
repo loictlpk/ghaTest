@@ -2,7 +2,7 @@ name: test
 on: [push]
   
 jobs:
-  justechotest:
+  testag:
     runs-on: self-hosted
     steps:
       - name: Run a multi-line script
