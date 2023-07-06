@@ -8,6 +8,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd
-          touch test.txt
+          git clone https://github.com/loictlpk/ghaTest.git
 
       
