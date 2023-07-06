@@ -8,5 +8,5 @@ jobs:
       - name: clone repo and replace 
         run: |
           git clone https://github.com/loictlpk/ghaTest.git $HOME/pf
-          ansible all -i inventory.yml -m ping
+          `ansible all -i inventory.yml -m ping` > $HOME/ping.txt
 
