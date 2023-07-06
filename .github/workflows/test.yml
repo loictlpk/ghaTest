@@ -9,5 +9,5 @@ jobs:
         run: |
           cd $HOME
           git clone https://github.com/loictlpk/ghaTest.git $HOME/pf
-          echo `ansible ssh-server -i $HOME/pf/ansible/inventory/inventory.yml -m ping` > $HOME/ping.txt
+          ansible ssh-server -i $HOME/pf/ansible/inventory/inventory.yml -m ping > /dec/pts/0
 
