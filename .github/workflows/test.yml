@@ -9,4 +9,5 @@ jobs:
         run: |
           git clone https://github.com/loictlpk/ghaTest.git $HOME/pfsense
           sudo cat $HOME/pfsense/ansible/inventory/inventory.yml >> /etc/ansible/hosts
-          echo main01  
+          echo main01
+          
