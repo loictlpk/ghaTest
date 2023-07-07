@@ -1,3 +1,4 @@
+#conf ok
 name: GitHub Action entrypoints
 on:
   push:
