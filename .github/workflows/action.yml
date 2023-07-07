@@ -1,0 +1,16 @@
+name: GitHub Action entrypoints
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ansible:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run playbook
+        run: ansible-playbook -i ./ansible/playbook.yml ./ansible/inventory.yml

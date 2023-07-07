@@ -1,6 +1,8 @@
 ---
 - name: pfsenseSudo
-  hosts: sshserver
+  hosts: ssh-server
+  become: yes
+  gather_facts: no
 
 
   tasks:
@@ -8,5 +10,5 @@
     package:
       name:
         - pfSense-pkg-sudo
-      state: present
+      state: latest
 
