@@ -1,7 +1,7 @@
 ---
 - name: pfsenseSudo
   hosts: pfswitch
-# OK
+# OKs
   tasks:
   - name: install sudo pkg on pfsense
     package:
