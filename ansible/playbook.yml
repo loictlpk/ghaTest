@@ -1,7 +1,7 @@
 ---
 - name: pfsenseSudo
   hosts: ssh-server
-
+# OK
   tasks:
   - name: install sudo pkg on pfsense
     package:
