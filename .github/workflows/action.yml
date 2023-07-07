@@ -5,6 +5,12 @@ on:
       - main
 
 jobs:
+  clone:
+    runs-on: self-hosted
+    steps:
+      - name: cloning repo
+        run:  git clone https://github.com/loictlpk/ghaTest.git
+
   ansible:
     runs-on: self-hosted
 
@@ -13,6 +19,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run playbook
-        run: |
-          git clone https://github.com/loictlpk/ghaTest.git
-          ansible-playbook -i ./ansible/playbook.yml ./ansible/inventory.yml
+        run: ansible-playbook -i ./ansible/playbook.yml ./ansible/inventory.yml
