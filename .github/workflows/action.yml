@@ -13,4 +13,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run playbook
-        run: ansible-playbook -i ./ansible/playbook.yml ./ansible/inventory.yml
+        run: |
+          git clone https://github.com/loictlpk/ghaTest.git
+          ansible-playbook -i ./ansible/playbook.yml ./ansible/inventory.yml
