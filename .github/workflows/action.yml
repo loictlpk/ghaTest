@@ -1,4 +1,4 @@
-#conf ok
+#sudo doesn't install
 name: GitHub Action entrypoints
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  clone:
+  repoCloning:
     runs-on: self-hosted
     steps:
       - name: cloning repo
@@ -14,10 +14,10 @@ jobs:
 
   ansible:
     runs-on: self-hosted
-    # needs: clone
+    needs: repoCloning
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Run the playbook
         run: ansible-playbook -i $MOME/pf/ansible/inventory.yml $HOME/pf/ansible/playbook.yml
