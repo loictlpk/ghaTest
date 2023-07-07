@@ -13,7 +13,7 @@ jobs:
 
   ansible:
     runs-on: self-hosted
-    #needs: clone
+    needs: clone
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
