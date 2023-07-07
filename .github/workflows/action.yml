@@ -19,4 +19,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run the playbook
-        run: ansible-playbook -i $HOME/pf/ansible/playbook.yml $HOME/pf/ansible/inventory.yml
+        run: ansible-playbook -i $MOME/pf/ansible/inventory.yml $HOME/pf/ansible/playbook.yml
