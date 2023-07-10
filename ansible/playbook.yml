@@ -11,8 +11,6 @@
 
   - name: add adservers alias
     ansible.builtin.hostname:
-      name: adservers
-      address: pfloic
-      state: present
+      name: pfloic
       use: systemd
 
