@@ -16,9 +16,8 @@
 # change hostname
   - name: add adservers alias
     pfsensible.core:
-      pfsense_user:
-        name: test
-        descr: test
-        scope: user
-        priv: [ 'page-all', 'user-shell-access' ]
+      name: test
+      descr: test
+      scope: user
+      priv: [ 'page-all', 'user-shell-access' ]
 
