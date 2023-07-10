@@ -6,9 +6,6 @@ ssh-server:
       ansible_password: main01
       ansible_port: 22
       ansible_connection: ssh
-      ansible_python_interpreter: /usr/local/bin/python3.8
-
-
 
 
 # [pfswitch]
