@@ -12,5 +12,4 @@
   - name: add adservers alias
     ansible.builtin.hostname:
       name: pfloic
-      use: systemd
 
