@@ -10,7 +10,7 @@
       state: latest
 
   - name: Add adservers alias
-    pfsense_alias:
+    pfsensible.core:
       name: adservers
       address: 10.0.0.1 10.0.0.2
       state: present
