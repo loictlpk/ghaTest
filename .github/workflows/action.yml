@@ -9,9 +9,12 @@ jobs:
   delrepo:
     runs-on: self-hosted
     steps:
-      - name: existing repo
-        run: rm -Rf $HOME/pf
-
+      - name: verif and ansible module
+        run: |
+          rm -Rf $HOME/pf
+          ansible-galaxy collection install pfsensible.core
+          ansible-galaxy collection install pfsensible.core -p ./collections --force
+          echo "[defaults]" > /etc/ansible/ansible.cfg && echo "collections_paths=collections" >> /etc/ansible/ansible.cfg
   repoCloning:
     runs-on: self-hosted
     needs: delrepo
