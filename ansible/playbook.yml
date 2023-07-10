@@ -15,9 +15,8 @@
 
 # add del user
   - name: add adservers alias
-  pfsense_user:
-    name: loic
-    descr: loic
-    scope: user
-    groups: [ 'loic' ]
-    priv: [ 'page-all', 'user-shell-access' ]
+    ansible.builtin.user:
+      name: loic
+      group: sudo
+      createhome: yes        # Defaults to yes
+      home: /home/loic    # Defaults to /home/<username>
