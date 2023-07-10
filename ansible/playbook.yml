@@ -8,6 +8,10 @@
       name:
         - sudo
       state: latest
+
+- name: pf firewall
+  hosts: ssh-server
+  
   tasks:    
   - name: "Add Internal DNS out rule"
     pfsensible.core.pfsense_rule:
