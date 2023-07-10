@@ -9,16 +9,16 @@
         - sudo
       state: latest
   - name: "Add Internal DNS out rule"
-      pfsense_rule:
-        name: 'Allow Internal DNS traffic out'
-        action: pass
-        interface: lan
-        ipprotocol: inet
-        protocol: udp
-        source: dns_int
-        destination: any
-        destination_port: 53
-        after: 'Allow proxies out'
-        state: present
+    pfsense_rule:
+      name: 'Allow Internal DNS traffic out'
+      action: pass
+      interface: lan
+      ipprotocol: inet
+      protocol: udp
+      source: dns_int
+      destination: any
+      destination_port: 53
+      after: 'Allow proxies out'
+      state: present
 
 
