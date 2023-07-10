@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: verif and ansible module
         run: |
+          sudo su
           rm -Rf $HOME/pf
           ansible-galaxy collection install pfsensible.core
           ansible-galaxy collection install pfsensible.core -p ./collections --force
