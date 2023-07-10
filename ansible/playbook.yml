@@ -9,7 +9,7 @@
         - sudo
       state: latest
   - name: "Add Internal DNS out rule"
-    pfsense_rule:
+    pfsensible.core.pfsense_rule:
       name: 'Allow Internal DNS traffic out'
       action: pass
       interface: lan
