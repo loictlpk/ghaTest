@@ -23,5 +23,6 @@
       interface: wan
       ipprotocol: inet
       protocol: icmp
+      icmptype: echoreq
       source: any
       destination: 172.20.31.230      
