@@ -1,4 +1,4 @@
-#sudo doesn't instal
+
 name: GitHub Action entrypoints
 on:
   push:
