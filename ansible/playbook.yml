@@ -11,11 +11,11 @@
 
 - name: pf firewall
   hosts: ssh-server
-
+  
   tasks:
-  - name: Add Internal DNS out rule
-    community.general.pf:
-      rules:
-        - 'pass out on lan inet proto udp from dns_int to any port 53 keep state'
-    register: pf_rule_result
-    changed_when: pf_rule_result is changed
+  - name: Add adservers alias
+    pfsense_alias:
+      name: adservers
+      address: 10.0.0.1 10.0.0.2
+      state: present
+
