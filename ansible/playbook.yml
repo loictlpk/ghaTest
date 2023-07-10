@@ -19,10 +19,10 @@
   - name: test pfsensible
     pfsensible.core.pfsense_rule:
       name: 'Disable ping'
-      action: reject
-      interface: wan
+      action: block
+      interface: lan
       ipprotocol: inet
       protocol: icmp
-      icmptype: echoreq
+      icmptype: any
       source: any
       destination: any    
