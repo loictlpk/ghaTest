@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: verif and ansible module
         run: rm -Rf $HOME/pf
+        
   repoCloning:
     runs-on: self-hosted
     needs: delrepo
