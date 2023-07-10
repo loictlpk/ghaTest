@@ -8,10 +8,10 @@
       name:
         - sudo
       state: latest
-- name: Add adservers alias
-  pfsense_alias:
-    name: myalias
-    address: 10.0.0.1 10.0.0.2
-    state: present
+  - name: Add adservers alias
+    pfsense_alias:
+      name: myalias
+      address: 10.0.0.1 10.0.0.2
+      state: present
 
 
