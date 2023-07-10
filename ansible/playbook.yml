@@ -8,10 +8,17 @@
       name:
         - sudo
       state: latest
-  - name: Add adservers alias
-    pfsense_alias:
-      name: myalias
-      address: 10.0.0.1 10.0.0.2
-      state: present
+  - name: "Add Internal DNS out rule"
+      pfsense_rule:
+        name: 'Allow Internal DNS traffic out'
+        action: pass
+        interface: lan
+        ipprotocol: inet
+        protocol: udp
+        source: dns_int
+        destination: any
+        destination_port: 53
+        after: 'Allow proxies out'
+        state: present
 
 
