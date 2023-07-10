@@ -6,8 +6,15 @@ on:
       - main
 
 jobs:
+  delrepo:
+    runs-on: self-hosted
+    steps:
+      - name: existing repo
+        run: rm -Rf $HOME/pf
+
   repoCloning:
     runs-on: self-hosted
+    needs: delrepo
     steps:
       - name: cloning repo
         run:  git clone https://github.com/loictlpk/ghaTest.git $HOME/pf
