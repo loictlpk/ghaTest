@@ -10,12 +10,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: verif and ansible module
-        run: |
-          sudo su
-          rm -Rf $HOME/pf
-          ansible-galaxy collection install pfsensible.core
-          ansible-galaxy collection install pfsensible.core -p ./collections --force
-          echo "[defaults]" > /etc/ansible/ansible.cfg && echo "collections_paths=collections" >> /etc/ansible/ansible.cfg
+        run: rm -Rf $HOME/pf
   repoCloning:
     runs-on: self-hosted
     needs: delrepo
