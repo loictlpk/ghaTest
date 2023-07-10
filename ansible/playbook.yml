@@ -9,7 +9,13 @@
         - sudo
       state: latest
 # change hostname
-  - name: change hostname
-    ansible.builtin.hostname:
-      name: mytest
+  # - name: change hostname
+  #   ansible.builtin.hostname:
+  #     name: mytest
+
+  - name: test module
+    pfsensible.core.pfsense_alias:
+      name: adservers
+      address: 10.0.0.1 10.0.0.2
+      state: present     
 
