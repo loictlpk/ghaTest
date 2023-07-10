@@ -16,13 +16,13 @@
   #     domain: arpa.home
 
 #FIREWALL RULE : block the ping OK 
-  # - name: test pfsensible
-  #   pfsensible.core.pfsense_rule:
-  #     name: 'ping out'
-  #     action: block
-  #     interface: lan
-  #     ipprotocol: inet
-  #     protocol: icmp
-  #     source: any
-  #     destination: any   
-  #     after: top
+  - name: test pfsensible
+    pfsensible.core.pfsense_rule:
+      name: 'ping out'
+      action: block
+      interface: lan
+      ipprotocol: inet
+      protocol: icmp
+      source: any
+      destination: any   
+      after: top
