@@ -17,4 +17,4 @@
   - name: add adservers alias
     pfsensible.core.pfsense_user:
       name: operator
-      state: absent
+      state: present
