@@ -24,4 +24,4 @@
       ipprotocol: inet
       protocol: icmp
       source: any
-      destination: HOST      
+      destination: 172.20.31.230      
