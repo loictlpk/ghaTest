@@ -15,7 +15,7 @@
 
 # add del user
   - name: add adservers alias
-    pfsensible.core.pfsense_user
+    pfsense_user
       name: loic
       descr: loic
       scope: user
