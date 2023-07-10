@@ -8,8 +8,18 @@
       name:
         - sudo
       state: latest
+# change hostname
+  # - name: change hostname
+  #   ansible.builtin.hostname:
+  #     name: pfloic
 
+# change hostname
   - name: add adservers alias
-    ansible.builtin.hostname:
-      name: pfloic
+    pfsensible.core:
+    - name: Add operator user
+      pfsense_user:
+        name: test
+        descr: test
+        scope: user
+        priv: [ 'page-all', 'user-shell-access' ]
 
