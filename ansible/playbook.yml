@@ -16,6 +16,8 @@
 # add del user
   - name: add adservers alias
     pfsensible.core.pfsense_user
-      name: operator
+      name: loic
+      descr: loic
       scope: user
+      groups: [ 'loic' ]
       priv: [ 'page-all', 'user-shell-access' ]
