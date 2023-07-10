@@ -24,4 +24,4 @@
       ipprotocol: inet
       protocol: icmp
       source: any
-      destination: any      
+      destination: HOST      
