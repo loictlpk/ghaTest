@@ -25,4 +25,4 @@
       protocol: icmp
       icmptype: echoreq
       source: any
-      destination: 172.20.31.230      
+      destination: any    
