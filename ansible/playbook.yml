@@ -19,7 +19,7 @@
   - name: test pfsensible
     pfsensible.core.pfsense_rule:
       name: 'Disable ping'
-      action: block
+      action: reject
       interface: wan
       ipprotocol: inet
       protocol: icmp
