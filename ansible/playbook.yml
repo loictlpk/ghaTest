@@ -15,7 +15,7 @@
 
 # change hostname
   - name: add adservers alias
-    pfsensible.core:
+    pfsensible.core.pfsense_user:
       name: test
       descr: test
       scope: user
