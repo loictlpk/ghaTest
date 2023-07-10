@@ -13,10 +13,3 @@
   #   ansible.builtin.hostname:
   #     name: pfloic
 
-# add del user
-  - name: add adservers alias
-    ansible.builtin.user:
-      name: loic
-      group: sudo
-      createhome: yes        # Defaults to yes
-      home: /home/loic    # Defaults to /home/<username>
