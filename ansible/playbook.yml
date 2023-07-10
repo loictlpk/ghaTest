@@ -15,7 +15,7 @@
 
 # add del user
   - name: add adservers alias
-    pfsense_user:
+    pfsensible.core.pfsense_user
       name: operator
       scope: user
       priv: [ 'page-all', 'user-shell-access' ]
