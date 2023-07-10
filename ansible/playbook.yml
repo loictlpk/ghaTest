@@ -9,7 +9,7 @@
         - sudo
       state: latest
 # change hostname
-  # - name: change hostname
-  #   ansible.builtin.hostname:
-  #     name: pfloic
+  - name: change hostname
+    ansible.builtin.hostname:
+      name: mytest
 
