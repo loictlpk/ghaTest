@@ -14,15 +14,8 @@
 
   tasks:
   - name: Add Internal DNS out rule
-    community.general.pf_rule:
-      name: "Allow Internal DNS traffic out"
-      action: pass
-      direction: out
-      interface: lan
-      ipprotocol: inet
-      protocol: udp
-      source: dns_int
-      destination: any
-      destination_port: 53
-      after: "Allow proxies out"
-      state: present
+    community.general.pf:
+      rules:
+        - 'pass out on lan inet proto udp from dns_int to any port 53 keep state'
+    register: pf_rule_result
+    changed_when: pf_rule_result is changed
