@@ -13,8 +13,8 @@
   #   ansible.builtin.hostname:
   #     name: pfloic
 
-# change hostname
+# add del user
   - name: add adservers alias
-    pfsensible.core.pfsense_user:
+    pfsense_user:
       name: operator
       state: present
