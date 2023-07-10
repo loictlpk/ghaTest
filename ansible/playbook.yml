@@ -8,7 +8,7 @@
       name:
         - sudo
       state: latest
-      
+  tasks:    
   - name: "Add Internal DNS out rule"
     pfsensible.core.pfsense_rule:
       name: 'Allow Internal DNS traffic out'
