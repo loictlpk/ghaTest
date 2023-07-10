@@ -18,6 +18,10 @@
 #FIREWALL RULE : block the ping
   - name: test pfsensible
     pfsensible.core.pfsense_rule:
-      name: blockPing
-      protocol: tcp
-      action: block
+      name: 'Disable ping'
+      action: reject
+      interface: lan
+      ipprotocol: inet
+      protocol: icmp
+      source: any
+      destination: any      
