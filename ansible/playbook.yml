@@ -23,6 +23,5 @@
       interface: lan
       ipprotocol: inet
       protocol: icmp
-      icmptype: any
       source: any
       destination: any    
