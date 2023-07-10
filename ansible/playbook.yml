@@ -20,4 +20,4 @@
       descr: Operator
       scope: user
       groups: [ 'Operators' ]
-      priv: [ 'page-all', 'user-shell-access' ]`
+      priv: [ 'page-all', 'user-shell-access' ]
