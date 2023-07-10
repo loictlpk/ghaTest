@@ -9,10 +9,6 @@
         - sudo
       state: latest
 
-- name: pf firewall
-  hosts: ssh-server
-  
-  tasks:
   - name: Add adservers alias
     pfsense_alias:
       name: adservers
