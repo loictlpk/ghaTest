@@ -15,7 +15,7 @@
 
 # add del user
   - name: add adservers alias
-    pfsense_user
+    pfsense_user:
       name: loic
       descr: loic
       scope: user
