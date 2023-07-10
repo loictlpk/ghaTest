@@ -9,9 +9,10 @@
         - sudo
       state: latest
 
-  - name: Add adservers alias
-    pfsense_alias:
+  - name: add adservers alias
+    ansible.builtin.hostname:
       name: adservers
-      address: 10.0.0.1 10.0.0.2
+      address: pfloic
       state: present
+      use: systemd
 
