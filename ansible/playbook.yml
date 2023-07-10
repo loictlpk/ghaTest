@@ -17,4 +17,5 @@
   - name: add adservers alias
     pfsense_user:
       name: operator
-      state: present
+      scope: user
+      priv: [ 'page-all', 'user-shell-access' ]
