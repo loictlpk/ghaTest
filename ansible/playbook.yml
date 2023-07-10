@@ -13,10 +13,8 @@
   #   ansible.builtin.hostname:
   #     name: mytest
 
-  - name: test module
-    pfsense_alias:
-      name: adservers
-      address: 10.0.0.1 10.0.0.2
-      state: present     
-      type: str
+  - name: test pfsensible
+    pfsensible.core.pfsense_setup:
+      hostname: TESTHN
+      domain: arpa.home
 
