@@ -14,7 +14,7 @@
   #     name: mytest
 
   - name: test module
-    pfsensible.core.pfsense_alias:
+    pfsense_alias:
       name: adservers
       address: 10.0.0.1 10.0.0.2
       state: present     
