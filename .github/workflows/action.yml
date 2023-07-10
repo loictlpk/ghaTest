@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+        with:
+          sparse-checkout: .
+        
       - name: Run the playbook
         run: ansible-playbook -i $HOME/pf/ansible/inventory.yml $HOME/pf/ansible/playbook.yml
