@@ -11,19 +11,18 @@
 
 - name: pf firewall
   hosts: ssh-server
-  
-  tasks:    
-  - name: "Add Internal DNS out rule"
-    pfsensible.core.pfsense_rule:
-      name: 'Allow Internal DNS traffic out'
+
+  tasks:
+  - name: Add Internal DNS out rule
+    community.general.pf_rule:
+      name: "Allow Internal DNS traffic out"
       action: pass
+      direction: out
       interface: lan
       ipprotocol: inet
       protocol: udp
       source: dns_int
       destination: any
       destination_port: 53
-      after: 'Allow proxies out'
+      after: "Allow proxies out"
       state: present
-
-
