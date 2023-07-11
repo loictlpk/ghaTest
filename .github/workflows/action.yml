@@ -9,8 +9,10 @@ jobs:
   MyCheckout:  
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v3
-      - uses: ./ansible
+      - uses: actions/checkout@v3  
+      - name: run playbook
+        run: |
+          ansible-playbook -i inventory ansible/hello-world.yaml
       
 
 
