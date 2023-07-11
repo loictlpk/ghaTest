@@ -1,28 +1,37 @@
 ---
-- name: pfsenseSudo
-  hosts: pfswitch
-  
+
+- name: This is a hello-world example
+  hosts: all
   tasks:
-  - name: install sudo pkg on pfsense
-    package:
-      name:
-        - sudo
-      state: latest
+    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+      copy:
+        content: hello-world
+        dest: /tmp/testfile.txt
+        mode: 0644
+# - name: pfsenseSudo
+#   hosts: pfswitch
+  
+#   tasks:
+#   - name: install sudo pkg on pfsense
+#     package:
+#       name:
+#         - sudo
+#       state: latest
 
-# # change hostname OK
-  - name: test pfsensible
-    pfsensible.core.pfsense_setup:
-      hostname: testheckout
-      domain: arpa.home
+# # # change hostname OK
+#   - name: test pfsensible
+#     pfsensible.core.pfsense_setup:
+#       hostname: testheckout
+#       domain: arpa.home
 
-#FIREWALL RULE : block the ping OK 
-  - name: test pfsensible
-    pfsensible.core.pfsense_rule:
-      name: 'ping out'
-      action: block
-      interface: lan
-      ipprotocol: inet
-      protocol: icmp
-      source: any
-      destination: any   
-      after: top
+# #FIREWALL RULE : block the ping OK 
+#   - name: test pfsensible
+#     pfsensible.core.pfsense_rule:
+#       name: 'ping out'
+#       action: block
+#       interface: lan
+#       ipprotocol: inet
+#       protocol: icmp
+#       source: any
+#       destination: any   
+#       after: top
