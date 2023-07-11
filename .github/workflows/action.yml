@@ -10,9 +10,10 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
-      - run: npm test
-      
-
+      - run: |
+          rm -Rf $HOME/pf
+          git clone https://github.com/loictlpk/ghaTest.git $HOME/pf
+          ansible-playbook -i $HOME/pf/ansible/inventory.yml $HOME/pf/ansible/playbook.yml
 
 
       # - run: echo 'HIIII' > /dev/pts/0
