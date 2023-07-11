@@ -6,13 +6,13 @@ on:
       - main
 
 jobs:
-  MyCheckout:  
-    runs-on: self-hosted
-    steps:
+  run-playbooks:
+    runs-on: ubuntu-latest
+    steps: 
       - uses: actions/checkout@v3
         with:
-          sparse-checkout: . 
-          path: main
+          submodules: true
+          token: ${{secrets.REPO_TOKEN}}
 
 
 
