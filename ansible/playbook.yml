@@ -1,6 +1,6 @@
 ---
 - name: pfsenseSudo
-  hosts: ssh-server
+  hosts: pfswitch
 
   tasks:
   - name: install sudo pkg on pfsense
