@@ -14,4 +14,4 @@ all:
 
 #EQ TO
 # [pfswitch]
-# 172.20.31.230  ansible_user=admin      ansible_password=main01
+# 172.20.31.230  ansible_user=admin      ansible_password={crypted}
