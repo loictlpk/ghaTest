@@ -7,7 +7,7 @@ on:
 
 jobs:
   myPlaybook:
-    uses: actions/checkout@v3
+    uses: ghaTest/main
   # delrepo:
   #   runs-on: self-hosted
   #   steps:
