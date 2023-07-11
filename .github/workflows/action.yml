@@ -2,15 +2,20 @@
 name: GitHub Action entrypoints
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+      
 
 jobs:
   MyCheckout:  
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
-      - run: echo 'HIIII' > /dev/pts/0
+      - run: npm test
+      
+
+
+
+      # - run: echo 'HIIII' > /dev/pts/0
       
 
 
