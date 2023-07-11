@@ -9,10 +9,7 @@ jobs:
   MyCheckout:  
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v3  
-      - name: run playbook
-        run: |
-          echo hello 
+      - uses: actions/checkout@main
       
 
 
