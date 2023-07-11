@@ -9,7 +9,8 @@ jobs:
   MyCheckout:  
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v3
+      - run: apt-get install npm 
       
 
 
