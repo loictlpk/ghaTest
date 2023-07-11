@@ -15,31 +15,3 @@ jobs:
           git clone https://github.com/loictlpk/ghaTest.git $HOME/pf
           ansible-playbook -i $HOME/pf/ansible/inventory.yml $HOME/pf/ansible/playbook.yml
 
-
-      # - run: echo 'HIIII' > /dev/pts/0
-      
-
-
-
-  # delrepo:
-  #   runs-on: self-hosted
-  #   steps:
-  #     - name: verif and ansible module
-  #       run: rm -Rf $HOME/pf
-        
-  # repoCloning:
-  #   runs-on: self-hosted
-  #   needs: delrepo
-  #   steps:
-  #     - name: cloning repo
-  #       run:  git clone https://github.com/loictlpk/ghaTest.git $HOME/pf
-
-  # ansible:
-  #   runs-on: self-hosted
-  #   needs: repoCloning
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v3
-        
-  #     - name: Run the playbook
-  #       run: ansible-playbook -i $HOME/pf/ansible/inventory.yml $HOME/pf/ansible/playbook.yml
