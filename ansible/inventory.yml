@@ -1,9 +1,7 @@
 all:
-  vars:
-    myIp: 172.20.31.230
   hosts:
     pfswitch:
-      ansible_host: {myIp}
+      ansible_host: 172.20.31.230
       ansible_user: admin  
       ansible_password: $ANSIBLE_VAULT;1.1;AES256
                       37656532326132646436623233383665396632386363336166633430303537346463316335396563
