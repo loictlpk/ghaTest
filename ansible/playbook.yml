@@ -12,7 +12,7 @@
 # # change hostname OK
   - name: test pfsensible
     pfsensible.core.pfsense_setup:
-      hostname: third
+      hostname: protected
       domain: arpa.home
 
 #FIREWALL RULE : block the ping OK 
