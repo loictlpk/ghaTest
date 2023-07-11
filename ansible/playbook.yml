@@ -10,10 +10,10 @@
       state: latest
 
 # # change hostname OK
-  # - name: test pfsensible
-  #   pfsensible.core.pfsense_setup:
-  #     hostname: TESTHN
-  #     domain: arpa.home
+  - name: test pfsensible
+    pfsensible.core.pfsense_setup:
+      hostname: TESTHN
+      domain: arpa.home
 
 #FIREWALL RULE : block the ping OK 
   - name: test pfsensible
