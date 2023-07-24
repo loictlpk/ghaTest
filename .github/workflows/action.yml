@@ -5,11 +5,10 @@ on:
 
 jobs:
   MyCheckout:
-    runs-on: self-hosted
     defaults:
       run:
         working-directory: ./ansible/
-
+    runs-on: self-hosted
     steps:
       - name: Setup environment by checkout
         uses: actions/checkout@v3
@@ -22,7 +21,7 @@ jobs:
 
       - name: Execute Ansible playbook
         run: |
-          ansible-playbook -i inventory.yml playbook.yml
+          ansible-playbook -i ./ansible/inventory.yml ./ansible/playbook.yml
 
 
 
