@@ -3,13 +3,6 @@
 - name: This is a hello-world example
   hosts: all
   tasks:
-# SIMPLE TEXT CREATION WITH CONTENT 
-    # - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
-    #   copy:
-    #     content: hello-world
-    #     dest: $HOME/testfile.txt
-    #     mode: 0644
-
 
 - name: pfsenseConfiguration
   hosts: pfswitch
