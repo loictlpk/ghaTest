@@ -2,6 +2,7 @@
 
 - name: pfsenseConfiguration
   hosts: pfswitch
+  check_mode: yes
 
   tasks:
 #REQUIRED PKG FOR MANAGEMENT
