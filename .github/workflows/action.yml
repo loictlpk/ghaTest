@@ -16,16 +16,3 @@ jobs:
       - name: Execute Ansible playbook
         run: |
           ansible-playbook -i ../ansible/inventory.yml ../ansible/playbook.yml
-
-# FAIL ANSIBLE PLAYBOOK STEP WITH ANSIBLE INSTALL
-      # - name: Install Ansible
-      #   run: |
-      #     sudo apt-get update
-      #     sudo apt-get install -y python3-pip
-      #     pip3 install ansible
-
-# - uses: actions/checkout@v3
-      # - run: |
-      #     rm -Rf $HOME/pf
-      #     git clone https://github.com/loictlpk/ghaTest.git $HOME/pf
-      #     ansible-playbook -i $HOME/pf/ansible/inventory.yml $HOME/pf/ansible/playbook.ymlsteps:    - name: Clone repository      uses: actions/checkout@v2
