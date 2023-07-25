@@ -3,38 +3,38 @@
 - name: This is a hello-world example
   hosts: all
   tasks:
-    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
-      copy:
-        content: hello-world
-        dest: $HOME/testfile.txt
-        mode: 0644
+# SIMPLE TEXT CREATION WITH CONTENT 
+    # - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+    #   copy:
+    #     content: hello-world
+    #     dest: $HOME/testfile.txt
+    #     mode: 0644
 
 
-
-# - name: pfsenseSudo
-#   hosts: pfswitch
+- name: pfsenseConfiguration
+  hosts: pfswitch
   
-#   tasks:
-#   - name: install sudo pkg on pfsense
-#     package:
-#       name:
-#         - sudo
-#       state: latest
+  tasks:
+  - name: install sudo pkg on pfsense
+    package:
+      name:
+        - sudo
+      state: latest
 
-# # # change hostname OK
-#   - name: test pfsensible
-#     pfsensible.core.pfsense_setup:
-#       hostname: testheckout
-#       domain: arpa.home
+# # change hostname OK
+  - name: pfsensible_hostname
+    pfsensible.core.pfsense_setup:
+      hostname: PF_Loic
+      domain: mirahi.local
 
-# #FIREWALL RULE : block the ping OK 
-#   - name: test pfsensible
-#     pfsensible.core.pfsense_rule:
-#       name: 'ping out'
-#       action: block
-#       interface: lan
-#       ipprotocol: inet
-#       protocol: icmp
-#       source: any
-#       destination: any   
-#       after: top
+#FIREWALL RULE : block the ping OK 
+  - name: pfsensible_firewallRule
+    pfsensible.core.pfsense_rule:
+      name: 'NoPing'
+      action: block
+      interface: lan
+      ipprotocol: inet
+      protocol: icmp
+      source: any
+      destination: any   
+      after: top
