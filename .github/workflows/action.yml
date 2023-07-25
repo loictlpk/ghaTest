@@ -13,6 +13,7 @@ jobs:
       - name: Setup environment by checkout
         uses: actions/checkout@v3
 
+# FAIL ANSIBLE PLAYBOOK STEP WITH ANSIBLE INSTALL
       # - name: Install Ansible
       #   run: |
       #     sudo apt-get update
