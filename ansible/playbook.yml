@@ -10,12 +10,14 @@
       name:
         - sudo
       state: latest
+      check_mode: yes
 
 #CHANGE HOSTNAME 
   - name: pfsensible_hostname
     pfsensible.core.pfsense_setup:
       hostname: PF_Loic
       domain: mirahi.local
+      check_mode: yes
 
 #FIREWALL RULE : No Ping
   - name: pfsensible_firewallRule
@@ -28,3 +30,4 @@
       source: any
       destination: any   
       after: top
+      check_mode: yes
