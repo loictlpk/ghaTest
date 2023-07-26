@@ -6,4 +6,4 @@
   tasks:
     - include: ../modules/package/privilegeInstall.yml
     - include: ../modules/general/hostname.yml
-    - include: ../modules/firewall/firewallNoPing.yml
+    - include: ../modules/firewall/noPing.yml
