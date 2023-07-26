@@ -5,22 +5,23 @@
 
   tasks:
 #REQUIRED PKG FOR MANAGEMENT
-  - name: install sudo pkg on pfsense
+  - name: install sudo pkg on pfsense      
+    check_mode: yes
     package:
       name:
         - sudo
       state: latest
-      check_mode: yes
 
 #CHANGE HOSTNAME 
   - name: pfsensible_hostname
+    check_mode: yes    
     pfsensible.core.pfsense_setup:
       hostname: PF_Loic
       domain: mirahi.local
-      check_mode: yes
 
 #FIREWALL RULE : No Ping
   - name: pfsensible_firewallRule
+    check_mode: yes
     pfsensible.core.pfsense_rule:
       name: 'NoPing'
       action: block
@@ -30,4 +31,3 @@
       source: any
       destination: any   
       after: top
-      check_mode: yes
