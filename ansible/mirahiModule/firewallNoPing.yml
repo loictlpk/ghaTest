@@ -1,7 +1,7 @@
 #FIREWALL RULE : No Ping
   - name: pfsensible_firewallRule
     pfsensible.core.pfsense_rule:
-      name: 'NoPing'
+      name: 'RejectPing'
       action: block
       interface: lan
       ipprotocol: inet
