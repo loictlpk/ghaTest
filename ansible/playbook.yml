@@ -4,27 +4,6 @@
   hosts: pfswitch
 
   tasks:
-#REQUIRED PKG FOR MANAGEMENT
-  - name: install sudo pkg on pfsense      
-    package:
-      name:
-        - sudo
-      state: latest
-
-#CHANGE HOSTNAME 
-  - name: pfsensible_hostname
-    pfsensible.core.pfsense_setup:
-      hostname: PF_Loic
-      domain: mirahi.local
-
-#FIREWALL RULE : No Ping
-  - name: pfsensible_firewallRule
-    pfsensible.core.pfsense_rule:
-      name: 'NoPing'
-      action: block
-      interface: lan
-      ipprotocol: inet
-      protocol: icmp
-      source: any
-      destination: any   
-      after: top
+    - include: sudoInstallPkg.yml
+    - include: hostname.yml
+    - include: firewallNoPing.yml

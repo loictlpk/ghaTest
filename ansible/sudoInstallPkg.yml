@@ -1,0 +1,6 @@
+#REQUIRED PKG FOR MANAGEMENT
+  - name: install sudo pkg on pfsense      
+    package:
+      name:
+        - sudo
+      state: latest

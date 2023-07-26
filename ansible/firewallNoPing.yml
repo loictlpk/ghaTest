@@ -1,0 +1,11 @@
+#FIREWALL RULE : No Ping
+  - name: pfsensible_firewallRule
+    pfsensible.core.pfsense_rule:
+      name: 'NoPing'
+      action: block
+      interface: lan
+      ipprotocol: inet
+      protocol: icmp
+      source: any
+      destination: any   
+      after: top
