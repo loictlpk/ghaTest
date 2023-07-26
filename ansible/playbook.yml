@@ -4,6 +4,6 @@
 
 # Module Runner
   tasks:
-    - include: ../modules/package/privilegeInstall.yml
+    - include: ../modules/package/sudo.yml
     - include: ../modules/general/hostname.yml
     - include: ../modules/firewall/noPing.yml
