@@ -1,6 +1,6 @@
 name: GitHub Action entrypoints
 on:
-  pull_request:
+  push:
     branches: [main]
 
 jobs:
