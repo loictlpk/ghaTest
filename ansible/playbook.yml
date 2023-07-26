@@ -4,6 +4,6 @@
 
 # Module Runner
   tasks:
-    - include: ../mirahiModule/privilegeInstall.yml
-    - include: ../mirahiModule/hostname.yml
-    - include: ../mirahiModule/firewallNoPing.yml
+    - include: ../modules/privilegeInstall.yml
+    - include: ../modules/hostname.yml
+    - include: ../modules/firewallNoPing.yml
