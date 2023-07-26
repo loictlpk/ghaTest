@@ -4,7 +4,7 @@ on:
     branches: [main]
 
 jobs:
-  MyCheckout:
+  ansible:
     defaults:
       run:
         working-directory: ./ansible/
