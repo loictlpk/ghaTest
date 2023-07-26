@@ -13,7 +13,7 @@ jobs:
       - name: Setup checkout environment
         uses: actions/checkout@v3
 
-# NEED INSTALL OF ansible and pfsensible module on the runner 
+# NEED INSTALLATION OF --> ansible and pfsensible module ON THE RUNNER
       - name: Run Ansible playbook
         run: |
           ansible-playbook -i inventory.yml playbook.yml
