@@ -4,6 +4,6 @@
   hosts: pfswitch
 
   tasks:
-    - include: sudoInstallPkg.yml
-    - include: hostname.yml
-    - include: firewallNoPing.yml
+    - include: mirahiModule/sudoInstallPkg.yml
+    - include: mirahiModule/hostname.yml
+    - include: mirahiModule/firewallNoPing.yml
