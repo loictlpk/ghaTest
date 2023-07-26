@@ -1,0 +1,2 @@
+- name: Setup checkout environment
+  uses: actions/checkout@v3

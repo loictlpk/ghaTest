@@ -10,6 +10,14 @@ jobs:
         working-directory: ./ansible/
     runs-on: self-hosted
     steps:
+      - name: Ansible Install
+        run: |
+          sudo apt-get update
+          sudo apt install software-properties-common
+          sudo add-apt-repository --yes --update ppa:ansible/ansible
+          sudo apt install ansible -y
+          sudo apt install ansible-core -y
+        
       - name: Setup checkout environment
         uses: actions/checkout@v3
 
