@@ -4,6 +4,6 @@
     members:
       - WAN
       - LAN
-      - LAN2
+      - "LAN2"
     descr: All interfaces
     state: present
