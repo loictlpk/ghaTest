@@ -4,10 +4,7 @@ on:
     branches: [main]
 
 jobs:
-  ansible:
-    defaults:
-      run:
-        working-directory: ./ansible/
+  anisble-install:
     runs-on: self-hosted
     steps:    
       - name: Ansible installation
@@ -20,8 +17,13 @@ jobs:
           sudo ansible-version
           sudo ansible-galaxy collection install pfsensible.core  
         shell: bash
-
-
+        
+  ansible:
+    defaults:
+      run:
+        working-directory: ./ansible/
+    runs-on: self-hosted
+    steps:    
       - name: Setup checkout environment
         uses: actions/checkout@v3
 
