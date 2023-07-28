@@ -1,5 +1,5 @@
 #CHANGE HOSTNAME 
   - name: pfsensible_hostname
     pfsensible.core.pfsense_setup:
-      hostname: pf
+      hostname: pfsense
       domain: mirahi.local
