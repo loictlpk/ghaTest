@@ -12,13 +12,13 @@ jobs:
     steps:    
       - name: Ansible installation
         run: |
-          apt-get update
-          apt install software-properties-common -y
-          add-apt-repository --yes --update ppa:ansible/ansible -y
-          apt install ansible -y
-          apt install ansible-core -y
-          ansible-version
-          ansible-galaxy collection install pfsensible.core  
+          sudo apt-get update
+          sudo apt install software-properties-common -y
+          sudo add-apt-repository --yes --update ppa:ansible/ansible -y
+          sudo apt install ansible -y
+          sudo apt install ansible-core -y
+          sudo ansible-version
+          sudo ansible-galaxy collection install pfsensible.core  
         shell: bash
 
 
