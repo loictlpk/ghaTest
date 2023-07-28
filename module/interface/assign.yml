@@ -2,7 +2,10 @@
   pfsensible.core.pfsense_interface:
     descr: LAN2
     interface: xn2
-    ipv4_type: static
+    ipv4_type: static    # dhcp, static or none
     ipv4_address: "10.0.0.10"
     ipv4_prefixlen: 24
+    ipv4_gateway: "10.0.0.254"
     enable: True
+  
+  # https://github.com/pfsensible/core/wiki/pfsense_interface
