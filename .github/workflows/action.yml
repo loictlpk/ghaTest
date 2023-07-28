@@ -12,7 +12,6 @@ jobs:
     steps:    
       - name: Ansible installation
         run: |
-          echo 'ansible installation - need privilege'
           apt-get update
           apt install software-properties-common -y
           add-apt-repository --yes --update ppa:ansible/ansible -y
