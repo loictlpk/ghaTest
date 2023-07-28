@@ -4,7 +4,7 @@ on:
     branches: [main]
 
 jobs:
-  anisble-install:
+  ansible-install:
     runs-on: self-hosted
     steps:    
       - name: Ansible installation
@@ -17,7 +17,7 @@ jobs:
           sudo ansible-version
           sudo ansible-galaxy collection install pfsensible.core  
         shell: bash
-        
+
   ansible:
     defaults:
       run:
