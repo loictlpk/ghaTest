@@ -2,6 +2,7 @@
   pfsensible.core.pfsense_interface:
     descr: LAN2
     interface: xn2
-    ipv4_address: '10.0.0.10'
+    ipv4_type: static
+    ipv4_address: "10.0.0.10"
     ipv4_prefixlen: 24
     enable: True
