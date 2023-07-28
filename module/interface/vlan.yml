@@ -1,0 +1,6 @@
+- name: interfaces assignements
+  pfsensible.core.pfsense_interface:
+    interface: xn2
+    vlan_id: 100
+    descr: VLAN100
+    state: present
