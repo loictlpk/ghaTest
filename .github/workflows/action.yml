@@ -14,7 +14,6 @@ jobs:
           sudo add-apt-repository --yes --update ppa:ansible/ansible -y
           sudo apt install ansible -y
           sudo apt install ansible-core -y
-          sudo ansible-version
           sudo ansible-galaxy collection install pfsensible.core  
         shell: bash
 
