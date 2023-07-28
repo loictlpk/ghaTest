@@ -6,3 +6,4 @@
       - LAN
       - LAN2
     descr: All interfaces
+    state: present
