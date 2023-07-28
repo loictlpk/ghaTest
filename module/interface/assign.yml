@@ -7,5 +7,5 @@
     ipv4_prefixlen: 24
     ipv4_gateway: "10.0.0.254"
     enable: True
-  
-  # https://github.com/pfsensible/core/wiki/pfsense_interface
+    
+# check the documentation for ipv6 
