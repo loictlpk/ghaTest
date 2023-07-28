@@ -2,7 +2,6 @@
   pfsensible.core.pfsense_interface_group:
     name: all
     members:
-      - 'xn1'
-      - 'xn2'
+      - 'LAN'
     descr: All interfaces
     state: present
