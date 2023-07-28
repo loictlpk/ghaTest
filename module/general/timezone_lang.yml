@@ -1,4 +1,4 @@
 - name: timezone and language
-  pfsense_setup:
+  pfsensible.core.pfsense_setup:
     timezone: Europe/Brussels
     language: en
