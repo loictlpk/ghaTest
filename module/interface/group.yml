@@ -2,7 +2,7 @@
   pfsensible.core.pfsense_interface_group:
     name: all
     members:
-      - xn1
-      - xn2
+      - 'xn1'
+      - 'xn2'
     descr: All interfaces
     state: present
