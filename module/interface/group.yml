@@ -1,6 +1,6 @@
 - name: Add interface group
   pfsensible.core.pfsense_interface_group:
-    name: all
+    name: IF
     members:
       - VLAN100
     descr: All interfaces
