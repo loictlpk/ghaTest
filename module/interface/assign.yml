@@ -1,0 +1,5 @@
+- name: interfaces assignements
+  pfsensible.core.pfsense_interface:
+    descr: Activation
+    interface: xn2
+    enable: True
