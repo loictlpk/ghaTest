@@ -5,4 +5,4 @@
 * pfSensible ==> https://galaxy.ansible.com/pfsensible/core
 
 
-![Infra](image.png)
+![Infra](infra.png)
