@@ -2,7 +2,7 @@
   pfsensible.core.pfsense_interface_group:
     name: all_ifcfg
     members:
-      - "LAN"
-      - "LAN2"
+      - LAN
+      - LAN2
     descr: All interfaces
     state: present
