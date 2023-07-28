@@ -5,5 +5,5 @@
       - WAN
       - LAN
       - LAN2
-    descr: All imterfaces
+    descr: All interfaces
     state: present
