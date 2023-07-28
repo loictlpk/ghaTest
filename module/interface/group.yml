@@ -2,7 +2,6 @@
   pfsensible.core.pfsense_interface_group:
     name: all_ifcfg
     members:
-      - "WAN"
       - "LAN"
       - "LAN2"
     descr: All interfaces
