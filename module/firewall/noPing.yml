@@ -1,4 +1,4 @@
-#FIREWALL RULE : No Ping
+#FIREWALL RULE : No ping
   - name: pfsensible_firewallRule
     pfsensible.core.pfsense_rule:
       name: 'Reject Ping'
