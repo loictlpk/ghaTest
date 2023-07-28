@@ -4,6 +4,7 @@ on:
     branches: [main]
 
 jobs:
+# INSTALLATION OF ANSIBLE AND PFSENSE's MODULE
   ansible-install:
     runs-on: self-hosted
     steps:    
