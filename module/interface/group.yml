@@ -1,9 +1,9 @@
-- name: Add interface group
-  pfsensible.core.pfsense_interface_group:
-    name: IF
-    members:
-      - VLAN100
-    descr: All interfaces
-    state: present
+# TO DO : members name is not recognized
 
-# need To be present on interface
+# - name: Add interface group
+#   pfsensible.core.pfsense_interface_group:
+#     name: IF
+#     members:
+#       - VLAN100
+#     descr: All interfaces
+#     state: present
