@@ -18,6 +18,7 @@ jobs:
         shell: bash
 
   ansible:
+    needs: ansible-install
     defaults:
       run:
         working-directory: ./ansible/
