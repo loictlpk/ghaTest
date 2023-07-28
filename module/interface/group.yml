@@ -1,0 +1,8 @@
+- name: Add interface group
+  pfsensible.core.pfsense_interface_group:
+    name: ALL IFCG
+    members:
+      - WAN
+      - LAN
+      - LAN2
+    descr: All interfaces
