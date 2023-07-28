@@ -1,5 +1,5 @@
 - name: interfaces assignements
-  pfsensible.core.pfsense_interface:
+  pfsensible.core.pfsense_vlan:
     interface: xn2
     vlan_id: 100
     descr: VLAN100

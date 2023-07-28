@@ -1,5 +1,5 @@
 - name: interfaces assignements
-  pfsensible.core.pfsense_vlan:
+  pfsensible.core.pfsense_interface:
     descr: LAN2
     interface: xn2
     ipv4_type: static    # dhcp, static or none
