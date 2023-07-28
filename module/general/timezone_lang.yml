@@ -1,0 +1,4 @@
+- name: timezone and language
+  pfsense_setup:
+    timezone: Europe/Brussels
+    language: en
