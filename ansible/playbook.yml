@@ -7,5 +7,6 @@
     - include: ../module/package/sudo.yml
     - include: ../module/general/hostname.yml
     - include: ../module/interface/assign.yml
+    - include: ../module/interface/vlan.yml 
     - include: ../module/general/timezone_lang.yml
     - include: ../module/firewall/noPing.yml
