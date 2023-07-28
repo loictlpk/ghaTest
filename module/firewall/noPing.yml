@@ -8,4 +8,5 @@
       protocol: icmp
       source: any
       destination: any   
-      after: top
+      priority: 1
+      # after: top
