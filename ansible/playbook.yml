@@ -9,7 +9,6 @@
     - include: ../module/general/hostname.yml
     - include: ../module/interface/assign.yml
     - include: ../module/interface/vlan.yml 
-    - include: ../module/interface/group.yml
     - include: ../module/firewall/noPing.yml
     - include: ../module/service/dns.yml
-    # - include: ../module/service/dhcp.yml
+    - include: ../module/service/dhcp.yml

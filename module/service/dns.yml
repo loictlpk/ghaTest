@@ -3,5 +3,5 @@
     dns_addresses: "172.20.31.53"
     dns_hostnames: dns.server
     # dns_gateways:
-    # dnsallowoverride:
+    # dnsallowoverride: 
     # dns_localhost:
