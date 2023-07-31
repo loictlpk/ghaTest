@@ -1,7 +1,7 @@
 - name: setup DNS
   pfsensible.core.pfsense_setup:
-    dns_addresses: "172.20.31.10"
+    dns_addresses: "172.20.31.53"
     # dns_gateways:
-    dns_hostnames: loic.cloud
+    dns_hostnames: dns.server
     # dnsallowoverride:
     # dns_localhost:
