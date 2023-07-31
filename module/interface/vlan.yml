@@ -1,4 +1,4 @@
-- name: interfaces assignements
+- name: VLAN configuration
   pfsensible.core.pfsense_vlan:
     interface: xn1
     vlan_id: 100
