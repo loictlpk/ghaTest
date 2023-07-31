@@ -3,8 +3,6 @@
 - name: Add interface group
   pfsensible.core.pfsense_interface_group:
     name: IF
-    members:
-      - LANA
-      - LANB
+    members: LANA
     descr: All interfaces
     state: present
