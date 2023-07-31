@@ -1,6 +1,0 @@
-- name: Create DHCP static mapping
-  pfsensible.core.pfsense_dhcp_static:
-    name: "dhcp1"
-    macaddr: "aa:aa:aa:aa:aa:aa"
-    ipaddr: "192.168.1.10"
-    state: present

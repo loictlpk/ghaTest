@@ -1,0 +1,7 @@
+- name: setup hostname and domain
+  pfsensible.core.pfsense_setup:
+    dns_addresses: "172.20.30.36"
+    # dns_gateways:
+    dns_hostnames: loic.could
+    # dnsallowoverride:
+    # dns_localhost:
