@@ -9,7 +9,7 @@
     enable: True
 
 
-- name: interfaces assignements 2
+- name: interfaces assignements 2 for DHCP
   pfsensible.core.pfsense_interface:
     descr: LAN21
     interface: xn3
