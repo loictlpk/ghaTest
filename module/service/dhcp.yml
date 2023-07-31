@@ -1,0 +1,6 @@
+- name: setup DHCP
+  pfsensible.core.pfsense_dhcp_static:
+    name: "test"
+    netif: xn2
+    ipaddr: "10.0.0.12"
+    state: present
