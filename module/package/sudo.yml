@@ -1,6 +1,6 @@
-#REQUIRED PKG : PFSENSE MANAGEMENT
-- name: install sudo pkg on pfsense      
-  package:
-    name:
-      - sudo
-    state: latest
+#REQUIRED PKG FOR PFSENSE MANAGEMENT
+  - name: install sudo pkg on pfsense      
+    package:
+      name:
+        - sudo
+      state: latest
