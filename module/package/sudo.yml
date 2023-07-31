@@ -3,4 +3,4 @@
     package:
       name:
         - sudo
-      state: latest
+      state: present
