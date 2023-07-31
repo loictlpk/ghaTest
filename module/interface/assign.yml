@@ -3,8 +3,8 @@
     descr: LAN2
     interface: xn2
     ipv4_type: dhcp  # dhcp, static or none
-    ipv4_address: "10.0.0.1"
-    ipv4_prefixlen: 24
+    # ipv4_address: "10.0.0.1"
+    # ipv4_prefixlen: 24
     # ipv4_gateway: "10.0.0.250"
     enable: True
 
