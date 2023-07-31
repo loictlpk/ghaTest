@@ -12,3 +12,4 @@
     - include: ../module/general/timezone_lang.yml
     - include: ../module/firewall/noPing.yml
     - include: ../module/service/dns.yml
+    - include: ../module/service/dhcp.yml
