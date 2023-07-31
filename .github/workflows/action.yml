@@ -32,4 +32,4 @@ jobs:
 # TO RUN THIS COMMAND : YOU NEED INSTALLATION OF --> ansible and pfsensible module ON THE RUNNER
       - name: Run Ansible playbook
         run: |
-          ansible-playbook -i inventory.yml playbook.yml
+          ansible-playbook -i inventory.yml playbook.yml -vvv
