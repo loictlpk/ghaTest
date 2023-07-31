@@ -2,6 +2,6 @@
   pfsensible.core.pfsense_dhcp_static:
     name: "DHCP"
     macaddr: "96:f7:79:25:de:54"
-    netif: LANB
+    netif: xn3
     ipaddr: "10.0.0.1"
     state: present
