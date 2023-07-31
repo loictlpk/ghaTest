@@ -1,7 +1,7 @@
-- name: setup DNS
+- name: setup DNS server
   pfsensible.core.pfsense_setup:
     dns_addresses: "172.20.31.53"
-    # dns_gateways:
     dns_hostnames: dns.server
+    # dns_gateways:
     # dnsallowoverride:
     # dns_localhost:
