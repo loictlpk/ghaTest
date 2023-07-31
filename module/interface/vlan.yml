@@ -1,6 +1,8 @@
 - name: interfaces assignements
   pfsensible.core.pfsense_vlan:
-    interface: xn2
+    interface: 
+      - xn1
+      - xn2
     vlan_id: 100
     descr: VLAN100
     priority: 5
