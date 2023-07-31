@@ -1,7 +1,7 @@
 - name: setup DHCP
   pfsensible.core.pfsense_dhcp_static:
     name: "DHCP"
-    # macaddr: "52:93:81:a5:2e:1d"
+    macaddr: "52:93:81:a5:2e:1d"
     netif: xn3
     ipaddr: "10.0.0.1"
     state: present
