@@ -11,7 +11,7 @@
 
 - name: interfaces assignements 2
   pfsensible.core.pfsense_interface:
-    descr: LAN2.1
+    descr: LAN21
     interface: xn3
     ipv4_type: dhcp  # dhcp, static or none
     # ipv4_address: "10.0.0.1"
