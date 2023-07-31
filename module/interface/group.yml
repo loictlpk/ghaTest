@@ -4,7 +4,7 @@
   pfsensible.core.pfsense_interface_group:
     name: IF
     members:
-      - xn2
-      - xn3
+      - LANA
+      - LANB
     descr: All interfaces
     state: present
