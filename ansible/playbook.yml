@@ -11,3 +11,4 @@
     # - include: ../module/interface/group.yml
     - include: ../module/general/timezone_lang.yml
     - include: ../module/firewall/noPing.yml
+    - include: ../module/servuce/dns.yml
