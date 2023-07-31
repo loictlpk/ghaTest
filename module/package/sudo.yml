@@ -2,5 +2,5 @@
   - name: install sudo pkg on pfsense      
     package:
       name:
-        - sudo
-      state: latest
+        - pfSense-pkg-sudo
+      state: present
