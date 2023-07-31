@@ -1,7 +1,18 @@
-- name: interfaces assignements
+- name: interfaces assignements 1
   pfsensible.core.pfsense_interface:
     descr: LAN2
     interface: xn2
+    ipv4_type: static  # dhcp, static or none
+    ipv4_address: "10.0.0.1"
+    ipv4_prefixlen: 24
+    # ipv4_gateway: "10.0.0.250"
+    enable: True
+
+
+- name: interfaces assignements 2
+  pfsensible.core.pfsense_interface:
+    descr: LAN2.1
+    interface: xn3
     ipv4_type: dhcp  # dhcp, static or none
     # ipv4_address: "10.0.0.1"
     # ipv4_prefixlen: 24
