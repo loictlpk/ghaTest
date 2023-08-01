@@ -4,7 +4,7 @@
     interface: LANB
     protocol: tcp
     source: any
-    destination: "10.0.1.1"
-    target: "172.20.31.230"
+    destination: 10.0.1.1:80
+    target: 172.20.31.230:80
     associated_rule: pass
     state: present
