@@ -2,5 +2,5 @@
   pfsensible.core.pfsense_dhcp_static:
     name: "test"
     macaddr: "96:f7:79:25:de:54"
-    ipaddr: "10.0.0.3"
+    ipaddr: "10.0.0.2"
     state: present
