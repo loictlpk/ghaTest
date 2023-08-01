@@ -1,0 +1,21 @@
+---
+- name: Activer le serveur DHCP sur l'interface Lana et enregistrer la configuration
+  vars:
+    pfsense_interface: lana
+
+  tasks:
+    - name: Activer le serveur DHCP sur l'interface Lana
+      pfsensible.core:
+        protocol: https
+        verify_ssl: no
+        actions:
+          - action: set_dhcp_interface
+            args:
+              interface: "{{ pfsense_interface }}"
+              dhcpd_enable: "1"
+        save_config: yes
+
+    - name: Enregistrer la configuration
+      pfsensible.core:
+        protocol: https
+        verify_ssl: no
