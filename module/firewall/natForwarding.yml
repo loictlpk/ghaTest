@@ -1,10 +1,10 @@
 - name: "Add NAT port forward traffic rule"
   pfsensible.core.pfsense_nat_port_forward:
-    descr: 'redirect lanb to lana'
+    descr: 'redirect lanb to lan pfsense'
     interface: LANB
     protocol: tcp
     source: any
-    destination: LAN
+    destination: 172.20.31.230:80
     target: 172.20.31.230:80
     associated_rule: pass
     state: present
