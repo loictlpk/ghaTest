@@ -1,8 +1,10 @@
 # TO DO : members name is not recognized
 
-# - name: Add interface group
-#   pfsensible.core.pfsense_interface_group:
-#     name: IF
-#     members: LANA
-#     descr: All interfaces
-#     state: present
+- name: Add interface group
+  pfsensible.core.pfsense_interface_group:
+    name: "IF"
+    members: 
+      - lana
+      - lanb
+    descr: All interfaces
+    state: present
