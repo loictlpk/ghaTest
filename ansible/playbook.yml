@@ -13,5 +13,6 @@
     - include: ../module/service/dns.yml
     - include: ../module/firewall/natForwarding.yml
     - include: ../module/firewall/natOutbonding.yml
+    - include: ../module/service/server_dhcp.yml
     # - include: ../module/interface/group.yml
     # - include: ../module/service/static_dhcp.yml
