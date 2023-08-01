@@ -1,4 +1,3 @@
-
 - name: Create DHCP static mapping
   pfsensible.core.pfsense_dhcp_static:
     name: "test"
