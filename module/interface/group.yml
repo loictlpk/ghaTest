@@ -4,5 +4,5 @@
   pfsensible.core.pfsense_interface_group:
     name: TEST
     members:
-      - "xn2"
+      - "lana"
     descr: All interfaces
