@@ -19,3 +19,4 @@
       pfsensible.core:
         protocol: https
         verify_ssl: no
+---
