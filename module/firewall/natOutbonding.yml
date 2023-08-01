@@ -1,7 +1,7 @@
 - name: "Add NAT outbound traffic rule"
   pfsensible.core.pfsense_nat_outbound:
     descr: 'NAT outbound traffic'
-    interface: LANB
+    interface: WAN
     source: any
-    destination: LAN
+    destination: any
     state: present
