@@ -1,7 +1,7 @@
     - name: Activer le serveur DHCP sur l'interface pfSense
       vars:
         pfsense_url: "https://172.20.31.230"
-        pfsense_login_data: "username=admin&password={{ main01 }}"
+        pfsense_login_data: "username=admin&password=main01"
         pfsense_dhcp_data: "if=lana&submit=Save"
       uri:
         url: "{{ pfsense_url }}/services_dhcp.php"
