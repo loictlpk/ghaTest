@@ -2,4 +2,4 @@
   - name: pfsensible_hostname
     pfsensible.core.pfsense_setup:
       hostname: pfsense
-      domain: mirahi.local
+      domain: loic.local
