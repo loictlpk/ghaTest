@@ -1,5 +1,5 @@
 ---
-- name: Activer le serveur DHCP sur l'interface Lana et enregistrer la configuration
+- name: Activer le serveur DHCP 
   vars:
     pfsense_interface: lana
 
