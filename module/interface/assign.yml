@@ -8,12 +8,21 @@
     # ipv4_gateway: "10.0.0.250"
     enable: True
 
-
 - name: interfaces assignements 2 for DHCP
   pfsensible.core.pfsense_interface:
     descr: LANB
     interface: xn3
-    ipv4_type: dhcp
+    ipv4_type: static  # dhcp, static or none
+    ipv4_address: "10.0.0.2"
+    ipv4_prefixlen: 24
     enable: True
+
+
+# - name: interfaces assignements 2 for DHCP
+#   pfsensible.core.pfsense_interface:
+#     descr: LANB
+#     interface: xn3
+#     ipv4_type: dhcp
+#     enable: True
 
 # check the documentation for ipv6 

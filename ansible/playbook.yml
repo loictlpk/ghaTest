@@ -11,4 +11,5 @@
     - include: ../module/interface/vlan.yml 
     - include: ../module/firewall/noPing.yml
     - include: ../module/service/dns.yml
-    - include: ../module/service/dhcp.yml
+    - include: ../module/firewall/natForwarding.yml
+    # - include: ../module/service/dhcp.yml

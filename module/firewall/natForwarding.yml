@@ -1,0 +1,9 @@
+- name: "Add NAT port forward traffic rule"
+  pfsensible.core.pfsense_nat_port_forward:
+    descr: 'redirect lanb to google'
+    interface: LANB
+    source: any
+    destination: "172.20.31.230"
+    # target: 1.2.3.4:22
+    associated_rule: pass
+    state: present
