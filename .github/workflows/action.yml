@@ -33,3 +33,7 @@ jobs:
       - name: Run Ansible playbook
         run: |
           ansible-playbook -i inventory.yml playbook.yml 
+
+
+#  --- DRY RUN MODE ---
+# ansible-playbook -i inventory.yml playbook.yml  --check
