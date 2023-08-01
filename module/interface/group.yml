@@ -3,7 +3,6 @@
 - name: Add interface group
   pfsensible.core.pfsense_interface_group:
     name: TEST
-    members: 
-      - lana
-      - lanb
+    members:
+      - LANA
     descr: All interfaces
