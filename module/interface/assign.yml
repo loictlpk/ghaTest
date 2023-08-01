@@ -1,6 +1,6 @@
 - name: interfaces assignements 1
   pfsensible.core.pfsense_interface:
-    descr: LANA
+    descr: lana
     interface: xn2
     ipv4_type: static  # dhcp, static or none
     ipv4_address: "10.0.0.1"
@@ -10,7 +10,7 @@
 
 - name: interfaces assignements 2 for DHCP
   pfsensible.core.pfsense_interface:
-    descr: LANB
+    descr: lanb
     interface: xn3
     ipv4_type: static  # dhcp, static or none
     ipv4_address: "10.0.1.1"
