@@ -1,4 +1,4 @@
-# TO DO : members name is not recognized (BUG)
+# TO DO : members name is not recognized (BUGGED)
 
 - name: Add interface group
   pfsensible.core.pfsense_interface_group:
