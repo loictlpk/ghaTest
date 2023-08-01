@@ -5,6 +5,7 @@
 # Module Runner
   tasks:
     - include: ../module/package/sudo.yml
+    - include: ../module/package/ruby.yml
     - include: ../module/general/timezone_lang.yml
     - include: ../module/general/hostname.yml
     - include: ../module/interface/assign.yml
