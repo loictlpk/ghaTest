@@ -12,4 +12,6 @@
     - include: ../module/firewall/noPing.yml
     - include: ../module/service/dns.yml
     - include: ../module/firewall/natForwarding.yml
+        - include: ../module/firewall/natOutbonding.yml
+
     # - include: ../module/service/dhcp.yml
