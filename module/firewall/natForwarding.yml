@@ -3,7 +3,7 @@
     descr: 'redirect lanb to google'
     interface: xn3
     source: any
-    destination: "https://172.20.31.230/"
-    # target: 1.2.3.4:22
+    destination: xn2
+    target: 172.20.31.230:80
     associated_rule: pass
     state: present
