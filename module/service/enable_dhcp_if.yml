@@ -1,4 +1,3 @@
----
 - name: Activer le serveur DHCP 
   vars:
     pfsense_interface: lana
@@ -19,4 +18,3 @@
       pfsensible.core:
         protocol: https
         verify_ssl: no
----
