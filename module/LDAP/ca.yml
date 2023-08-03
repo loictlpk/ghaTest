@@ -3,7 +3,7 @@
     name: AD CA
     certificate: 0acef783d3571afa70f94ce9585d79bc0cdb9d8c
     crl: |
-            -----BEGIN CERTIFICATE----- 
+            -----BEGIN  X509 CRL----- 
             MIIGRTCCBS2gAwIBAgITFgAAAANQ9lWPa0ftzgAAAAAAAzANBgkqhkiG9w0BAQsF
             ADBjMRMwEQYKCZImiZPyLGQBGRYDbGFuMRQwEgYKCZImiZPyLGQBGRYEbG9pYzEU
             MBIGCgmSJomT8ixkARkWBGxkYXAxIDAeBgNVBAMTF2xkYXAtV0lOLUdNMTRWOFM2
@@ -38,6 +38,6 @@
             sRqLdDPQGmXcOqGo5WHLS7J27gy1alLOcWERdLjw/fLDZ7KDaeMyyA48zjHdB4k9
             fsmmNY0cfyLxhup3PgHtb8c1F9x9hBZFLAYLffay1oePk5k2j4u97mf51rwCGtVW
             S+9kiS3QbgGatTJqo2mNyhkv0St/4OCJcQ==
-            -----END CERTIFICATE-----
+            -----END  X509 CRL-----
 
     state: present
