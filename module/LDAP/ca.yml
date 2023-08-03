@@ -1,8 +1,7 @@
 - name: Add AD Certificate Authority
   pfsensible.core.pfsense_ca:
     name: AD CA
-    certificate: -----BEGIN PRIVATE KEY-----
-                MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0rRY6uEWmXVcV
+    certificate: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0rRY6uEWmXVcV
                 vNJVm01nwo7Hp0N4cYN/61rGMCg2Lm7YKe41+pg65eH/vrvNmUZE23+l3z+IV5r1
                 nPVQ/hbJYjBPHdloJzxwUmGU5F9tDi1qsn6Sn0Vtg9HbPKBUXBTrHsOz97TFHyAV
                 t1gMeBJgA/TpW55xshwPbtnmckHMoJmdpUl572KVlGPO3SYvpxysTWoemkZ4cULj
@@ -27,8 +26,7 @@
                 7OUxdho/G9hSVDxTmA4WXXTOEKuvbsAooea36udBAoGBALm1wCMH/k8P1npg/8cJ
                 hQwzgU8tih+/be5CirSvHLuEVz3y2LhG8DSpCc7JRSWm5MovSup7QMGPIJLz7ZAf
                 PFZFZ7dirI+oPPaRvlXe214T7rP89Qwlp/fd6HLZfuDtiF5o9yl7fpVBmINbonOr
-                6Royx6IaA4mKaOtxT2MBZbYk
-                -----END PRIVATE KEY-----
+                6Royx6IaA4mKaOtxT2MBZbYk 
 
     crl: |
             -----BEGIN CERTIFICATE----- 
