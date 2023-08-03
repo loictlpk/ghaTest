@@ -1,9 +1,37 @@
 - name: Add AD Certificate Authority
   pfsensible.core.pfsense_ca:
     name: AD CA
-    certificate: 0acef783d3571afa70f94ce9585d79bc0cdb9d8c
+    certificate: -----BEGIN PRIVATE KEY-----
+                MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0rRY6uEWmXVcV
+                vNJVm01nwo7Hp0N4cYN/61rGMCg2Lm7YKe41+pg65eH/vrvNmUZE23+l3z+IV5r1
+                nPVQ/hbJYjBPHdloJzxwUmGU5F9tDi1qsn6Sn0Vtg9HbPKBUXBTrHsOz97TFHyAV
+                t1gMeBJgA/TpW55xshwPbtnmckHMoJmdpUl572KVlGPO3SYvpxysTWoemkZ4cULj
+                KYElw4ldU5ca9hrFVJGida1kmVTGlzrWI3iYaq5jnQ4yoGpQB149NwAHEOF3XNae
+                iP4EhDTXQHdtFqS9PAMy9pKNr3Svyrmvimi8hOBmJ8TLq5uviOZyI8PshKBOBshG
+                k52w+HEbAgMBAAECggEAMkQJcDK+JefIB6MtvWVkpp5pTMCLM+IY3Kjk60iQl2pZ
+                qkgYHupmGdTFCHrPEwc2loeevs4ahdshoH2Xfn4CZuqrWAeM6b4owXMZ9OuIZPXR
+                yuJ39mDbVvmak+0NCgtIQpWfit06bLEZIxGMLIPnUNEo/RdhQG52AhEsDEHzbnM0
+                OEXlgiF08f2LFQQXjJxhBgprohxS6++KSxyOe/moLT5h1oDSoDOdV/q3mjEwbI7O
+                tG+FZ3+QZGLUkRIdiEiDWaSMaSFHfvGXacasQRVakeHg3eRniWjPS5bJwG1qljxF
+                YCnl19SfhnZU03k1v3Sx3HfddbdC1SaEirpeHpt/CQKBgQDbgf2TFFWDlW6EzFNj
+                MHMmJ3MZvXN0HT51HQo4XOD4zaDmgrnY+NYESDIEGWxgnZeYOPvfuIQMT5+POXfV
+                98r6U7zhpj5RG0k/UkQF4GE70vEknRFPwd9p6bPVeQFzDu9nWFIYYrTlRU7xaKXd
+                7J2QFt7YyIJYlB7X2Q+FqAZxDQKBgQDStna6dEYaw70rl8WbutdF2xVJ3w2eXFfh
+                qP2FzBH6LNhfkZW/zDXNAPdNECNpX6QPPdvZ3iHbfYPrkE8HIk5IclhSjqB8nZop
+                +T8yv+ELI8hFjCxmjJPWkTeLJlq0OmQt+9rReIpdANYyNHMdC3XQaHiaPs1TaofA
+                j3P92YzQxwKBgHLuKuC5gtS0hvtNKFQE6CWP/jn58dtX/H3BSLqeFsTulVJcHAa4
+                swXm7xkqXo5vtRHktCw9JhZ0Ei0hf9cuOL683Wagbnx09vMKlccl5oM2PUBYZNoH
+                vnxr+tbI1rNxnHPV0JYoCGMK2PyZOE9sNktdTizfPzA1zbhiVDg887J5AoGBANKb
+                TVBPp0JZIlrP99MPjNtlfoG3UAVYhv4lykBRGCbVa+8ZtHNfyOZ+cK+10a8gyPny
+                +itouq6HZbOtKVAYGeaPY3gg1oe3fr81QNWYs3ZO7X2V/UsCd0GfI8URMNezBS5w
+                7OUxdho/G9hSVDxTmA4WXXTOEKuvbsAooea36udBAoGBALm1wCMH/k8P1npg/8cJ
+                hQwzgU8tih+/be5CirSvHLuEVz3y2LhG8DSpCc7JRSWm5MovSup7QMGPIJLz7ZAf
+                PFZFZ7dirI+oPPaRvlXe214T7rP89Qwlp/fd6HLZfuDtiF5o9yl7fpVBmINbonOr
+                6Royx6IaA4mKaOtxT2MBZbYk
+                -----END PRIVATE KEY-----
+
     crl: |
-            -----BEGIN  X509 CRL----- 
+            -----BEGIN CERTIFICATE----- 
             MIIGRTCCBS2gAwIBAgITFgAAAANQ9lWPa0ftzgAAAAAAAzANBgkqhkiG9w0BAQsF
             ADBjMRMwEQYKCZImiZPyLGQBGRYDbGFuMRQwEgYKCZImiZPyLGQBGRYEbG9pYzEU
             MBIGCgmSJomT8ixkARkWBGxkYXAxIDAeBgNVBAMTF2xkYXAtV0lOLUdNMTRWOFM2
@@ -38,6 +66,6 @@
             sRqLdDPQGmXcOqGo5WHLS7J27gy1alLOcWERdLjw/fLDZ7KDaeMyyA48zjHdB4k9
             fsmmNY0cfyLxhup3PgHtb8c1F9x9hBZFLAYLffay1oePk5k2j4u97mf51rwCGtVW
             S+9kiS3QbgGatTJqo2mNyhkv0St/4OCJcQ==
-            -----END  X509 CRL-----
+            -----END CERTIFICATE-----
 
     state: present
