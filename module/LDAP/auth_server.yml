@@ -5,9 +5,7 @@
     port: 636
     transport: ssl
     scope: subtree
-    authcn: cn=Administrator
+    authcn: cn=Administrator,cn=Users
     basedn: dc=ldap,dc=loic, dc=lan
     bindpw: "Main01"
-    attr_user: toto
-    attr_groupobj: userG
     state: present
