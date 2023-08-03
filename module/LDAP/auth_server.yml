@@ -7,4 +7,5 @@
     scope: subtree
     authcn: cn=Administrator,cn=Users
     basedn: dc=ldap,dc=loic, dc=lan
+    bindpw: "Main01"
     state: present
