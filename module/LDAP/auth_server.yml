@@ -7,5 +7,5 @@
     scope: subtree
     authcn: CN=pfsense-ad,OU=pfsense,DC=ldap,DC=loic,DC=lan
     basedn: dc=ldap,dc=loic, dc=lan
-    bindpw: "Main01"
+    bindpw: "Main01Main01"
     state: present
