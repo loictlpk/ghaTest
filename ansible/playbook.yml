@@ -4,14 +4,18 @@
 
 # Module Runner
   tasks:
-    - include: ../module/package/sudo.yml
-    - include: ../module/general/timezone_lang.yml
-    - include: ../module/general/hostname.yml
-    - include: ../module/interface/assign.yml
-    - include: ../module/interface/vlan.yml 
-    - include: ../module/firewall/noPing.yml
-    - include: ../module/service/dns.yml
-    - include: ../module/firewall/natForwarding.yml
-    - include: ../module/firewall/natOutbonding.yml
+    # - include: ../module/package/sudo.yml
+    # - include: ../module/general/timezone_lang.yml
+    # - include: ../module/general/hostname.yml
+    # - include: ../module/interface/assign.yml
+    # - include: ../module/interface/vlan.yml 
+    # - include: ../module/firewall/noPing.yml
+    # - include: ../module/service/dns.yml
+    # - include: ../module/firewall/natForwarding.yml
+    # - include: ../module/firewall/natOutbonding.yml
+    - include: ../module/LDAP/ca.yml
+    - include: ../module/LDAP/group.yml
+    - include: ../module/LDAP/auth_server.yml
+
     # - include: ../module/interface/group.yml
     # - include: ../module/service/static_dhcp.yml

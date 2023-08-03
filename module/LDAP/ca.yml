@@ -1,0 +1,42 @@
+- name: Add AD Certificate Authority
+  pfsensible.core.pfsense_ca:
+    name: AD CA
+    certificate: |
+            -----BEGIN CERTIFICATE----- 
+            MIIGRTCCBS2gAwIBAgITFgAAAANQ9lWPa0ftzgAAAAAAAzANBgkqhkiG9w0BAQsF
+            ADBjMRMwEQYKCZImiZPyLGQBGRYDbGFuMRQwEgYKCZImiZPyLGQBGRYEbG9pYzEU
+            MBIGCgmSJomT8ixkARkWBGxkYXAxIDAeBgNVBAMTF2xkYXAtV0lOLUdNMTRWOFM2
+            OTVDLUNBMB4XDTIzMDgwMjEyMjMzM1oXDTI0MDgwMTEyMjMzM1owADCCASIwDQYJ
+            KoZIhvcNAQEBBQADggEPADCCAQoCggEBAKb3it2RN7Fwy2fsQN80ODyRUNpqGvWI
+            YG78rSsHN1hprHvwAk6aEq3k6NnbuyMuyAODakGoJ+2VBZHJ2ucHgdGwtqk/HEFL
+            xSXpoodVBB/XCimFMZ3TtGWgdAUHLq5zhlFUKFsSW1Us8QGnQ5HSg5RbvZx2E+6o
+            LvWwpZ7gb1NVHm9nY9PsXEVfEP5hYwy3QkWBdoerlGkNxiELqF3ToEk4wAxcP0Rc
+            DrNtGgt07ma55K2YB6c7J2PTpgID0ufojR3UBc0XLh6jm+lVBHW4m5XnvQQ7yBu2
+            TpGg3zTgQgtvwJMPW0wG9kRH9ueXJPbYErCs6w1r5mwc9Ixg3zh+c+UCAwEAAaOC
+            A1MwggNPMDsGCSsGAQQBgjcVBwQuMCwGJCsGAQQBgjcVCMKiSoPmrBDVkSWCzaRK
+            hbKRBB+DscY/g6TpVwIBZAIBAjAyBgNVHSUEKzApBgcrBgEFAgMFBgorBgEEAYI3
+            FAICBggrBgEFBQcDAQYIKwYBBQUHAwIwDgYDVR0PAQH/BAQDAgWgMEAGCSsGAQQB
+            gjcVCgQzMDEwCQYHKwYBBQIDBTAMBgorBgEEAYI3FAICMAoGCCsGAQUFBwMBMAoG
+            CCsGAQUFBwMCMB0GA1UdDgQWBBRLSvdw5yuINNdaeefRDRUFRV4UtTAfBgNVHSME
+            GDAWgBQKzveD01ca+nD5TOlYXXm8DNudjDCB4gYDVR0fBIHaMIHXMIHUoIHRoIHO
+            hoHLbGRhcDovLy9DTj1sZGFwLVdJTi1HTTE0VjhTNjk1Qy1DQSxDTj1XSU4tR00x
+            NFY4UzY5NUMsQ049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2VzLENOPVNl
+            cnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9bGRhcCxEQz1sb2ljLERDPWxhbj9j
+            ZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlz
+            dHJpYnV0aW9uUG9pbnQwgc4GCCsGAQUFBwEBBIHBMIG+MIG7BggrBgEFBQcwAoaB
+            rmxkYXA6Ly8vQ049bGRhcC1XSU4tR00xNFY4UzY5NUMtQ0EsQ049QUlBLENOPVB1
+            YmxpYyUyMEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRp
+            b24sREM9bGRhcCxEQz1sb2ljLERDPWxhbj9jQUNlcnRpZmljYXRlP2Jhc2U/b2Jq
+            ZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1dGhvcml0eTBEBgNVHREBAf8EOjA4gh1X
+            SU4tR00xNFY4UzY5NUMubGRhcC5sb2ljLmxhboINbGRhcC5sb2ljLmxhboIITE9J
+            Q0xEQVAwTgYJKwYBBAGCNxkCBEEwP6A9BgorBgEEAYI3GQIBoC8ELVMtMS01LTIx
+            LTE1MTAzODk3NjctMTk0NTk3MzY4My0xODUwNDIwMzYtMTAwMDANBgkqhkiG9w0B
+            AQsFAAOCAQEAj0RkoIY4uFyrLvxntSiRI6nvVwmwZ8SjCRLEfD+/XT9pu2b0m3wa
+            sD6RrRd1J1j3CyG7haszcBnri4dAjX+KWjdbgUkziX3TA6qlrW8yXTcu4ktoNqx8
+            kEmVzQFUPNvVAhh++UoB9A6g6ahbaL9rScF6tcj2fmqeftKn0ZMsdyzRKjz+WiKD
+            sRqLdDPQGmXcOqGo5WHLS7J27gy1alLOcWERdLjw/fLDZ7KDaeMyyA48zjHdB4k9
+            fsmmNY0cfyLxhup3PgHtb8c1F9x9hBZFLAYLffay1oePk5k2j4u97mf51rwCGtVW
+            S+9kiS3QbgGatTJqo2mNyhkv0St/4OCJcQ==
+            -----END CERTIFICATE-----
+
+    state: present

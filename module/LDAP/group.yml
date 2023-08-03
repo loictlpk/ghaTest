@@ -1,0 +1,7 @@
+- name: Add adservers group
+  pfsensible.core.pfsense_group:
+    name: userG
+    descr: Remote Admins
+    scope: remote
+    priv: [ 'page-all', 'user-shell-access' ]
+    state: present

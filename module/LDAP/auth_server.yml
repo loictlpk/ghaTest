@@ -1,0 +1,13 @@
+- name: Add adservers authentication server
+  pfsensible.core.pfsense_authserver_ldap:
+    name: AD
+    host: "172.20.10.168"
+    port: 636
+    transport: ssl
+    scope: subtree
+    authcn: cn=Administrator
+    basedn: dc=ldap,dc=loic, dc=lan
+    bindpw: "Main01"
+    attr_user: toto
+    attr_groupobj: userG
+    state: present

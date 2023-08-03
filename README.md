@@ -7,6 +7,7 @@
 * pfSensible ==> https://galaxy.ansible.com/pfsensible/core
 
 # LDAP SERVER
+Configure Active Directory just before
 * microsoft server ==> https://www.miniorange.com/guide-to-setup-ldaps-on-windows-server
 ## MODULES USED FOR LDAP SERVER TEST AND USER CONFIGURATION
 * https://github.com/pfsensible/core/wiki/pfsense_authserver_ldap
