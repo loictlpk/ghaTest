@@ -2,7 +2,7 @@
   pfsensible.core.pfsense_authserver_ldap:
     name: AD
     host: "172.20.10.168"
-    port: 636
+    port: 386
     transport: ssl
     scope: subtree
     authcn: CN=Administrator,CN=Users,DC=ldap,DC=loic,DC=lan
