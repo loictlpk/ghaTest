@@ -1,7 +1,7 @@
 - name: Add AD Certificate Authority
   pfsensible.core.pfsense_ca:
     name: AD CA
-    certificate: |
+    crl: |
             -----BEGIN CERTIFICATE----- 
             MIIGRTCCBS2gAwIBAgITFgAAAANQ9lWPa0ftzgAAAAAAAzANBgkqhkiG9w0BAQsF
             ADBjMRMwEQYKCZImiZPyLGQBGRYDbGFuMRQwEgYKCZImiZPyLGQBGRYEbG9pYzEU
