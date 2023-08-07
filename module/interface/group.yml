@@ -1,11 +1,11 @@
 # #### ADD GROUP IS BUGGING ####
 - name: add interface group
   pfsensible.core.pfsense_interface_group:
-    name: test
+    name: test2
     members:
-      - LANA
-      - LANB
-    descr: test
+      - lana
+      - lanb
+    descr: test2
     state: present
 
 
