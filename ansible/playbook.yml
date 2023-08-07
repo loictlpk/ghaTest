@@ -18,5 +18,5 @@
     # - include: ../module/LDAP/group.yml
 
 #### BUGGED
-    - include: ../module/interface/group.yml
+    # - include: ../module/interface/group.yml
     # - include: ../module/service/static_dhcp.yml
