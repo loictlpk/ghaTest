@@ -9,6 +9,9 @@
 # LDAP SERVER
 Configure Active Directory just before
 * microsoft server ==> https://www.miniorange.com/guide-to-setup-ldaps-on-windows-server
+* LDAPS ==> https://techcommunity.microsoft.com/t5/sql-server-blog/step-by-step-guide-to-setup-ldaps-on-windows-server/ba-p/385362
+* LDAP basics ==> https://www.redhat.com/en/topics/security/what-is-ldap-authentication
+
 ## MODULES USED FOR LDAP SERVER TEST AND USER CONFIGURATION
 * https://github.com/pfsensible/core/wiki/pfsense_authserver_ldap
 * https://github.com/pfsensible/core/wiki/pfsense_ca
