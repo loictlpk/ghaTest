@@ -1,9 +1,20 @@
 # BUG : members name is not recognized
-- name: Add interface group
+- name: add interface group
   pfsensible.core.pfsense_interface_group:
     name: test
     members:
       - lana
       - lanb
-    # descr: All interfaces
-    state: absent
+    descr: test
+    state: present
+
+
+# # DELETE GROUP IS WORKING
+# - name: delete interface group
+#   pfsensible.core.pfsense_interface_group:
+#     name: test
+#     members:
+#       - lana
+#       - lanb
+#     descr: test
+#     state: absent
