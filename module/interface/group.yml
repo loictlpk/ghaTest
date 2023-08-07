@@ -1,7 +1,7 @@
 # BUG : members name is not recognized
 - name: Add interface group
   pfsensible.core.pfsense_interface_group:
-    name: grp
+    name: "MYIFCGRP"
     members:
       - lana
       - lanb
