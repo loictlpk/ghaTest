@@ -2,8 +2,7 @@
 - name: add interface group
   pfsensible.core.pfsense_interface_group:
     name: test2
-    members:
-      lana
+    members: lana
     descr: test2
     state: present
 
