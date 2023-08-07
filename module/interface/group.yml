@@ -2,8 +2,8 @@
 - name: Add interface group
   pfsensible.core.pfsense_interface_group:
     name: test
-    # members:
-    #   - lana
-    #   - lanb
+    members:
+      - lana
+      - lanb
     # descr: All interfaces
     state: absent
