@@ -13,9 +13,9 @@
     # - include: ../module/service/dns.yml
     # - include: ../module/firewall/natForwarding.yml
     # - include: ../module/firewall/natOutbonding.yml
-    - include: ../module/LDAP/auth_server.yml
+    # - include: ../module/LDAP/auth_server.yml
     # - include: ../module/LDAP/ca.yml
     # - include: ../module/LDAP/group.yml
 
-    # - include: ../module/interface/group.yml
+    - include: ../module/interface/group.yml
     # - include: ../module/service/static_dhcp.yml

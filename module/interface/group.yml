@@ -1,8 +1,8 @@
 # BUG : members name is not recognized
-
-# - name: Add interface group
-#   pfsensible.core.pfsense_interface_group:
-#     name: TEST
-#     members:
-#       - "lana"
-#     descr: All interfaces
+- name: Add interface group
+  pfsensible.core.pfsense_interface_group:
+    name: grp
+    members:
+      - lana
+      - lanb
+    descr: All interfaces
