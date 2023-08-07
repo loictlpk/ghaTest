@@ -1,9 +1,9 @@
 # BUG : members name is not recognized
 - name: Add interface group
   pfsensible.core.pfsense_interface_group:
-    name: "MYIFCGRP"
-    members:
-      - xn1
-      - xn2
-    descr: All interfaces
-    state: present
+    name: test
+    # members:
+    #   - lana
+    #   - lanb
+    # descr: All interfaces
+    state: absent
