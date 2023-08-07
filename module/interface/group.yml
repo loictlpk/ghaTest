@@ -4,6 +4,7 @@
     name: test
     members:
       - lana
+      - lanb
     descr: test
     state: present
 
