@@ -1,15 +1,15 @@
-# BUG : members name is not recognized
+# #### ADD GROUP IS BUGGING ####
 - name: add interface group
   pfsensible.core.pfsense_interface_group:
     name: test
     members:
-      - lana
-      - lanb
+    - lana
     descr: test
     state: present
 
 
-# # DELETE GROUP IS WORKING
+# #### DELETE GROUP IS WORKING ####
+
 # - name: delete interface group
 #   pfsensible.core.pfsense_interface_group:
 #     name: test
