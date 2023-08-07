@@ -3,7 +3,7 @@
   pfsensible.core.pfsense_interface_group:
     name: test
     members:
-    - lana
+      - lana
     descr: test
     state: present
 
