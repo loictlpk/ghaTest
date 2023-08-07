@@ -3,7 +3,7 @@
   pfsensible.core.pfsense_interface_group:
     name: "MYIFCGRP"
     members:
-      - LANA
-      - LANB
+      - "LANA"
+      - "LANB"
     descr: All interfaces
     state: present
