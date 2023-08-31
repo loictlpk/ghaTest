@@ -16,5 +16,5 @@ Configure Active Directory just before
 * https://github.com/pfsensible/core/wiki/pfsense_authserver_ldap
 * https://github.com/pfsensible/core/wiki/pfsense_ca
 * https://github.com/pfsensible/core/wiki/pfsense_group#pfsensiblecorepfsense_group
-
+# DIAGRAM
 ![Infra](infra.png)
